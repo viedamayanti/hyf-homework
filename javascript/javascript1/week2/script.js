@@ -98,7 +98,7 @@ if(boughtCandyPrice > 100) {
     }
 }
 
-  addCandy('sweet', 1000); //Enough candy for you!
+  addCandy('sweet', 1000); //Enough candy for you!!
   console.log(boughtCandy);
   console.log(boughtCandyPrice);
   canBuyMoreCandy();
