@@ -17,7 +17,7 @@ function getFullName(firstname, lastname){
 const fullName3 = getFullName('Brian', 'Jensen'); //Brian Jensen
 const fullName4 = getFullName("",""); //Please fill up your name
 
-//Event application
+/*//Event application
 function getEventWeekday(day){
     const date = new Date();
     const dayIndex = date.getDay();
@@ -98,7 +98,7 @@ if(boughtCandyPrice > 100) {
     }
 }
 
-  addCandy('sweet', 1000);
+  addCandy('sweet', 1000); //Enough candy for you!
   console.log(boughtCandy);
   console.log(boughtCandyPrice);
-  canBuyMoreCandy();
+  canBuyMoreCandy();*/

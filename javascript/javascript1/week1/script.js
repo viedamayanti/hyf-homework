@@ -50,3 +50,4 @@ const secondWords = ['Group', 'Investment', 'Corporate', 'Inc', 'United', 'Compa
 const randomNumber = firstWords[Math.floor(Math.random() * 10)] + ' ' + secondWords[Math.floor(Math.random() * 10)];
 console.log(randomNumber);
 
+
