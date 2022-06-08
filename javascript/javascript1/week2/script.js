@@ -102,3 +102,7 @@ if(boughtCandyPrice > 100) {
   console.log(boughtCandy);
   console.log(boughtCandyPrice);
   canBuyMoreCandy();
+
+ 
+
+
