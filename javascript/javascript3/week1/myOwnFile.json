@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Vie",
+    "age": "35",
+    "hobby": ["dancing", "video editing", "travelling"],
+    "music": ["pop", "kpop", "90's"],
+    "city": "Svendborg"
+  },
+  {
+    "id": 2,
+    "name": "Brian",
+    "age": "41",
+    "hobby": ["walking", "travelling"],
+    "music": ["house", "RnB"],
+    "city": "Svendborg"
+  },
+  {
+    "id": 3,
+    "name": "Simon",
+    "age": "11",
+    "hobby": ["gaming", "sport"],
+    "music": ["house", "RnB"],
+    "city": "Svendborg"
+  }
+]
