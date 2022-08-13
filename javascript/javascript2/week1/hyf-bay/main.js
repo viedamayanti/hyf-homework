@@ -4,7 +4,6 @@ const products = getAvailableProducts();
 
 function renderProduct(products){
     for(const product of products){
-        const main = document.get
         const ulElement = document.getElementById("ulList")
         const list = document.createElement("li")
         const name = document.createElement("h2")
