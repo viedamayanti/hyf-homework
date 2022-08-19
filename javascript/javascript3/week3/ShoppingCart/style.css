@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+  border: 3px solid #ce2129;
+  padding: 30px;
+  justify-content: center;
+}
+
+.table-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+  color: #ea1c26;
+}
+.search,
+.input {
+  margin: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
+}
+
+#inputText,
+#productText {
+  margin: 10px;
+}
+.searchBtn,
+.addBtn {
+  padding: 7px 12px;
+  background-color: #ce2129;
+  color: white;
+  border-radius: 6px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: #ce2129 2px solid;
+}
+
+.cart {
+  bottom: 12px;
+  right: 12px;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.cart ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section.cart ul > li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+section.cart ul > li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
