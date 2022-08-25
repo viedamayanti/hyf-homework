@@ -6,7 +6,8 @@ class Product {
   }
   convertToCurrency(currency) {
     // Implement functionality here
-    const urlCurrency = `https://v6.exchangerate-api.com/v6/65e9169f45d75e71ef7414dd/latest/${currency}`;
+    const urlCurrency =
+      'https://v6.exchangerate-api.com/v6/65e9169f45d75e71ef7414dd/latest/dkk';
     return fetch(urlCurrency)
       .then((response) => response.json())
       .then((data) => {
