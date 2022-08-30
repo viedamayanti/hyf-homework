@@ -1,6 +1,8 @@
+
 -- Active: 1661075209561@@0.0.0.0@33060@hyf
- hyf;
-select * from task;
+USE hyf;
+
+
 -- 1
 SELECT COUNT(*) FROM task;
 -- 2
@@ -44,4 +46,8 @@ FROM task
 JOIN status
 ON task.status_id = status.id
 GROUP BY status.name
+
 ORDER BY COUNT(task.id) DESC;
+
+ORDER BY COUNT(task.id) DESC; 
+
