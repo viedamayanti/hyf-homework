@@ -49,3 +49,5 @@ const firstWords = ['Horizon', 'Viesim', 'BSV', 'The', 'Matrix', 'Blue Kite', 'A
 const secondWords = ['Group', 'Investment', 'Corporate', 'Inc', 'United', 'Company', 'Hack', 'Coder', 'Technology', 'Care'];
 const randomNumber = firstWords[Math.floor(Math.random() * 10)] + ' ' + secondWords[Math.floor(Math.random() * 10)];
 console.log(randomNumber);
+
+
