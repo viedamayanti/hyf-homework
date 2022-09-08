@@ -1,3 +1,7 @@
-console.log(process.argv);
-let args = process.argv.slice(0);
-console.log(args);
+let args = process.argv.slice(2);
+let sum = 0;
+for (let i = 0; i < args.length; i++) {
+  sum += Number(args[i]);
+}
+console.log(sum / args.length);
+
