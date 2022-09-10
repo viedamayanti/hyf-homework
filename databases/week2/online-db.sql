@@ -43,6 +43,15 @@ CREATE TABLE orders (
   ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+DESCRIBE order_product;
+CREATE TABLE order_product(
+order_id INT unsigned NOT NULL,
+product_id INT unsigned NOT NULL,
+PRIMARY KEY(order_id, product_id),
+CONSTRAINT `fk_order_id` FOREIGN KEY (`order_id`) REFERENCES `online-db`.`orders` (`id`)ON DELETE CASCADE ON UPDATE CASCADE,
+CONSTRAINT `fk_product_id` FOREIGN KEY (`product_id`) REFERENCES `online-db`.`product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
 ALTER TABLE customer
 ADD COLUMN address VARCHAR (255) NOT NULL;
 
@@ -70,6 +79,12 @@ VALUES (302, '2018-07-18', '2018-07-20', 10, 1002);
 INSERT INTO orders (id, order_date, ship_date, quantity, cust_id)
 VALUES (303, '2019-09-17', '2019-10-20', 5, 1001);
 
+-- order_product
+INSERT INTO order_product(order_id, product_id) VALUES(301, 201);
+INSERT INTO order_product(order_id, product_id) VALUES(301, 203);
+INSERT INTO order_product(order_id, product_id) VALUES(301, 202);
+
 SELECT * FROM customer;
 SELECT * FROM product;
 SELECT * FROM orders;
+SELECT * FROM order_product;
