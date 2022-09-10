@@ -20,7 +20,7 @@ WHERE id = 1;
 
 UPDATE task 
 SET status_id = 3
-WHERE status_id = 2 AND status_id = 1;
+WHERE task.id = 10;
 
 DELETE FROM task
 WHERE id = 36;
