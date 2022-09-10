@@ -16,7 +16,7 @@ CREATE TABLE `student` (
   `phone` varchar(255) NULL,
   `class_id` int unsigned NOT NULL,
   PRIMARY KEY (`id`)
-  -- CONSTRAINT `fk_class` FOREIGN KEY `class`(id) REFERENCES `student`(id) ON UPDATE CASCADE ON DELETE CASCADE
+  CONSTRAINT `fk_class` FOREIGN KEY `class_id` REFERENCES `class`(id) ON UPDATE CASCADE ON DELETE CASCADE
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
