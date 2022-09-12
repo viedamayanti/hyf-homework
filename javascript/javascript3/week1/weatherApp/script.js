@@ -94,6 +94,6 @@ const day = new Date();
 date.innerHTML = day.toLocaleDateString('en-US', options);
 
 // Time output
-const timeNow = document.querySelector('.timeNow');
+const timeNow = document.querySelector('timeNow');
 const time = day.getHours();
 timeNow.innerHTML = time;
