@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 console.log('Script loaded');
+=======
+// @ts-nocheck
+>>>>>>> f59fdaa8f590cba6fbc8d68a3d12c2717a69d094
 // Add event listener to the botton
 document.addEventListener('DOMContentLoaded', () => {
   const button = document.getElementById('searchBtn');
@@ -8,7 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const apiKey = 'SFTp2cVez4xkRPIf4S3BDN6TrDtluDAV';
     const limitNumber = document.getElementById('numberText').value;
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&limit=${limitNumber}&q=${nameInput}`;
+<<<<<<< HEAD
 
+=======
+    console.log(nameInput);
+    console.log(limitNumber);
+>>>>>>> f59fdaa8f590cba6fbc8d68a3d12c2717a69d094
     let existingDiv = document.getElementById('giphyImages');
     if (existingDiv) {
       existingDiv.remove();

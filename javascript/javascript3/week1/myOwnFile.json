@@ -2,24 +2,39 @@
   {
     "id": 1,
     "name": "Vie",
+<<<<<<< HEAD
     "age": 35,
     "hobbies": ["dancing", "video editing", "travelling"],
+=======
+    "age": "35",
+    "hobby": ["dancing", "video editing", "travelling"],
+>>>>>>> f59fdaa8f590cba6fbc8d68a3d12c2717a69d094
     "music": ["pop", "kpop", "90's"],
     "city": "Svendborg"
   },
   {
     "id": 2,
     "name": "Brian",
+<<<<<<< HEAD
     "age": 41,
     "hobbies": ["walking", "travelling"],
+=======
+    "age": "41",
+    "hobby": ["walking", "travelling"],
+>>>>>>> f59fdaa8f590cba6fbc8d68a3d12c2717a69d094
     "music": ["house", "RnB"],
     "city": "Svendborg"
   },
   {
     "id": 3,
     "name": "Simon",
+<<<<<<< HEAD
     "age": 11,
     "hobbies": ["gaming", "sport"],
+=======
+    "age": "11",
+    "hobby": ["gaming", "sport"],
+>>>>>>> f59fdaa8f590cba6fbc8d68a3d12c2717a69d094
     "music": ["house", "RnB"],
     "city": "Svendborg"
   }
