@@ -73,16 +73,6 @@ window.addEventListener('load', () => {
 
         //Pressure
         pressure.innerHTML = pressureTemp;
-
-        console.log(pressureTemp);
-        console.log(weatherData);
-        console.log(location);
-        console.log(temperature);
-        console.log(humidity);
-        console.log(windSpeed);
-        console.log(weather);
-        console.log(weatherDescription);
-        console.log(iconId);
         if (inputText.value.toLowerCase()) {
           locationPlace.innerHTML = location;
         }
