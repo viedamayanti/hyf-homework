@@ -11,9 +11,8 @@ class Product {
     return fetch(urlCurrency)
       .then((response) => response.json())
       .then((data) => {
-        const getConvert = data.conversion_rates[currency];
-        //const convert = getConvert * this.price;
-        console.log(getConvert);
+        const convertRate = data.conversion_rates[currency];
+        console.log(convertRate);
       });
   }
 }
@@ -31,7 +30,7 @@ class ShoppingCart {
   removeProduct(product) {
     // Implement functionality here
     const index = this.products.indexOf(product);
-    return this.products.splice(index, 1);
+    this.products = this.products.filter((pr) => pr.name !== product);
   }
 
   searchProduct(productName) {
