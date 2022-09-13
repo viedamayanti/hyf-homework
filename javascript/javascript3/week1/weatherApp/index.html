@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans+Narrow:wght@700&family=Poppins:wght@100&family=Raleway:wght@100&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>Javascript 3 week 1</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <h1 id="title">The Weather Now</h1>
+        <input
+          type="text"
+          id="inputText"
+          placeholder="Search location"
+          size="30"
+        />
+        <br />
+        <button class="searchBtn">Search</button>
+        <button class="geoBtn">Geolocation</button>
+      </header>
+      <div class="date-time-place">
+        <div class="dateNow">12 juli</div>
+        <div class="timeNow">2.32</div>
+        <div class="location-place">Copenhagen</div>
+        <div class="coord">
+          <h2>Coordinate</h2>
+          <p class="description-coord"></p>
+          <br />
+          <p class="lat">Latitude is</p>
+          <p class="long">Longtitude is</p>
+        </div>
+      </div>
+      <div class="temperature">
+        <h2 class="temperature-degree">29</h2>
+        <img class="icon" height="100px" width="auto" alt="pic-weather" ) />
+        <h2 class="temperature-description">Sunny</h2>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <h2>Humidity</h2>
+          <br />
+          <p class="description-humidity"></p>
+        </div>
+        <div class="wind">
+          <h2>Wind Speed</h2>
+          <br />
+          <p class="description-wind"></p>
+        </div>
+        <div class="pressure">
+          <h2>Pressure</h2>
+          <br />
+          <p class="description-pressure"></p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
