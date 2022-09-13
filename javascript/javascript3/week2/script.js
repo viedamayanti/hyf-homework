@@ -5,16 +5,16 @@ function fetchMovie() {
   )
     .then((response) => response.json())
     .then((data) => {
+      const badMovies2000 = [];
       const badMovies = data.filter((movie) => {
-        return movie.rating < 5;
-      });
-      console.log(badMovies);
-      const badMovies2000 = badMovies.filter((movie) => {
-        return movie.year < 2000;
+        if (movie.year > 2000 && movie.rating < 5) badMovies2000.push(movie);
+        return;
       });
       console.log(badMovies2000);
+      return badMovies.rating < 5;
     });
 }
+
 fetchMovie();
 
 // Resolve timer
@@ -51,6 +51,7 @@ getPosition();
 function getCurrentLocation() {
   getPosition().then((response) => {
     const { coords } = response;
+    console.log(coords);
   });
 }
 getCurrentLocation();
