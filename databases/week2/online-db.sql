@@ -5,7 +5,7 @@ DROP DATABASE IF EXISTS `online-db`;
 DESCRIBE customer;
 DROP TABLE customer;
 CREATE TABLE customer(
-id int unsigned NOT NULL AUTO_INCREMENT,
+id int unsigned NOT NULL,
   first_name VARCHAR (255) NOT NULL,
   last_name VARCHAR (255) NOT NULL,
   phone VARCHAR (255) NOT NULL,
@@ -17,10 +17,9 @@ id int unsigned NOT NULL AUTO_INCREMENT,
 DESCRIBE product;
 DROP TABLE product;
 CREATE TABLE product(
-id int unsigned NOT NULL AUTO_INCREMENT,
+id int unsigned NOT NULL,
   product_name VARCHAR (255) NOT NULL,
   product_price VARCHAR (255) NOT NULL,
-  cust_id INT UNSIGNED,
   PRIMARY KEY (id),
   CONSTRAINT `fk_product`
   FOREIGN KEY (`cust_id`)
@@ -64,12 +63,12 @@ INSERT INTO customer (id, first_name, last_name, phone, email, address)
 VALUES (1003, 'Dika', 'Maradika', '56575859', 'jdika@mara.dk', 'Vædderen 23, Ringsted');
 
 -- Product
-INSERT INTO product (id, product_name, product_price, cust_id)
-VALUES (201, 'Macbook Pro 13', '35000', 1003);
-INSERT INTO product (id, product_name, product_price, cust_id)
-VALUES (202, 'Gopro Max', '5999', 1002);
-INSERT INTO product (id, product_name, product_price, cust_id)
-VALUES (203, 'Canon EOS M50', '4897', 1001);
+INSERT INTO product (id, product_name, product_price)
+VALUES (201, 'Macbook Pro 13', '35000');
+INSERT INTO product (id, product_name, product_price)
+VALUES (202, 'Gopro Max', '5999');
+INSERT INTO product (id, product_name, product_price)
+VALUES (203, 'Canon EOS M50', '4897');
 
 -- Orders
 INSERT INTO orders (id, order_date, ship_date, quantity, cust_id)
