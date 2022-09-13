@@ -8,17 +8,10 @@ window.addEventListener('load', () => {
       navigator.geolocation.getCurrentPosition((position) => {
         let lat = position.coords.latitude.toFixed(2); //to fixed is decimal
         let long = position.coords.longitude.toFixed(2);
-<<<<<<< HEAD
         const textLat = document.querySelector('.lat');
         textLat.innerHTML = `Latitude is ${lat}`;
         const textLong = document.querySelector('.long');
         text.innerHTML = `Longitude is ${long}`;
-=======
-        const text = document.querySelector('.lat');
-        text.innerHTML = `Latitude is ${lat}`;
-        const text2 = document.querySelector('.long');
-        text2.innerHTML = `Longitude is ${long}`;
->>>>>>> f59fdaa8f590cba6fbc8d68a3d12c2717a69d094
       });
     } else {
       alert('Cannot access your location');
@@ -80,8 +73,6 @@ window.addEventListener('load', () => {
 
         //Pressure
         pressure.innerHTML = pressureTemp;
-<<<<<<< HEAD
-=======
 
         console.log(pressureTemp);
         console.log(weatherData);
@@ -92,7 +83,6 @@ window.addEventListener('load', () => {
         console.log(weather);
         console.log(weatherDescription);
         console.log(iconId);
->>>>>>> f59fdaa8f590cba6fbc8d68a3d12c2717a69d094
         if (inputText.value.toLowerCase()) {
           locationPlace.innerHTML = location;
         }
@@ -114,10 +104,6 @@ const day = new Date();
 date.innerHTML = day.toLocaleDateString('en-US', options);
 
 // Time output
-<<<<<<< HEAD
 const timeNow = document.querySelector('timeNow');
-=======
-const timeNow = document.querySelector('.timeNow');
->>>>>>> f59fdaa8f590cba6fbc8d68a3d12c2717a69d094
 const time = day.getHours();
 timeNow.innerHTML = time;
