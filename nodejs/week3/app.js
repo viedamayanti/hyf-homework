@@ -53,6 +53,7 @@ contactsAPIRouter.get('/', async (req, res) => {
     res.status(500).json({ Msg: 'Internal server error' });
   }
 });
+
 contactsAPIRouter.get('/', async (req, res) => {
   try {
     const result = await knex.orderBy('last_name', 'desc');
