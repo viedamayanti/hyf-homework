@@ -1,3 +1,4 @@
+// @ts-nocheck
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
@@ -10,7 +11,6 @@ app.get('/', (req, res) => {
   res.send('This is a search engine');
 });
 
-// It does not work
 app.get('/search', (req, res) => {
   console.log(req.query);
   const queryValue = req.query.q;
@@ -19,7 +19,6 @@ app.get('/search', (req, res) => {
       return Object.values(item)
         .map(String)
         .some((value) =>
-          // @ts-ignore
           value.toLowerCase().includes(queryValue.toLowerCase())
         );
     });

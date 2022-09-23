@@ -14,13 +14,5 @@
     "description": "Battery life is not great",
     "type": "electronic",
     "value": "Mac"
-  },
-  {
-    "id": 3,
-    "name": "Used iPhone",
-    "price": "3500",
-    "description": "Battery life is not great",
-    "type": "mobile",
-    "value": "The phone"
   }
 ]
