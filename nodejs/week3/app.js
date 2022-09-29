@@ -24,16 +24,25 @@ const contactsAPIRouter = express.Router();
 apiRouter.use('/contacts', contactsAPIRouter);
 
 contactsAPIRouter.get('/', async (req, res) => {
-  let query = knex.select('').from('contacts');
+  let query = knex.select('*').from('contacts');
 
-  if ('sort' in req.query) {
+  //The original version
+  /* if ('sort' in req.query) {
     // @ts-ignore
     const orderBy = req.query.sort.toString();
     if (orderBy.length > 0) {
       query = query.orderByRaw(orderBy);
     }
-  }
+  }*/
+  //The fix version
 
+  if ('sort' in req.query) {
+    // @ts-ignore
+    const sorting = req.query.sort.toString().split(' ');
+    if (sorting.length > 0) {
+      query = query.orderBy(sorting[0]);
+    }
+  }
   console.log('SQL', query.toSQL().sql);
 
   try {
@@ -42,24 +51,6 @@ contactsAPIRouter.get('/', async (req, res) => {
   } catch (e) {
     console.error(e);
     res.status(500).json({ error: 'Internal server error' });
-  }
-});
-
-contactsAPIRouter.get('/', async (req, res) => {
-  try {
-    const result = await knex.orderBy('first_name', 'asc');
-    res.send(req.query.sort);
-  } catch (error) {
-    res.status(500).json({ Msg: 'Internal server error' });
-  }
-});
-
-contactsAPIRouter.get('/', async (req, res) => {
-  try {
-    const result = await knex.orderBy('last_name', 'desc');
-    res.send(req.query.sort);
-  } catch (error) {
-    res.status(500).json({ Msg: 'Internal server error' });
   }
 });
 
