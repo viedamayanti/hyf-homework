@@ -86,4 +86,3 @@ INSERT INTO order_product(order_id, product_id) VALUES(301, 202);
 SELECT * FROM customer;
 SELECT * FROM product;
 SELECT * FROM orders;
-SELECT * FROM order_product;
