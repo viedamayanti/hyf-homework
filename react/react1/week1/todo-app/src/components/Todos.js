@@ -1,4 +1,4 @@
-const todoItem = [
+const todoItems = [
   {
     id: 1,
     activity: 'Get out of bed',
@@ -19,7 +19,7 @@ const todoItem = [
 export function Todos() {
   return (
     <ul>
-      {todoItem.map((item) => (
+      {todoItems.map((item) => (
         <li key={item.id}>
           {' '}
           {item.activity} ,{item.dateline}
