@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+  border: 3px solid #4856d2;
+  padding: 30px;
+  justify-content: center;
+}
