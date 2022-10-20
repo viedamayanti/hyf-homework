@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+
+  justify-content: center;
+
+  color: white;
+  font-family: 'Lobster', sans-serif;
+  min-height: 100vh;
+}
+.form {
+  margin: 50px;
+  border: solid 2px white;
+  padding: 10px;
+}
+
+input {
+  width: 50%;
+}
