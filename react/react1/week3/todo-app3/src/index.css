@@ -1,0 +1,21 @@
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  display: flex;
+  border: 2px solid royalblue;
+  justify-content: center;
+  padding-bottom: 30px;
+  align-items: center;
+  width: 75%;
+  text-align: center;
+  color: blue;
+}
+input {
+  width: 70%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
