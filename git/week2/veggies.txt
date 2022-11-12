@@ -3,3 +3,5 @@ carrot
 tomato
 spring onion
 potato
+garlic
+chilli
